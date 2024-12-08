@@ -3,7 +3,7 @@ export const fetchCountries = async () => {
     let response;
     try
     {
-        response = await fetch('./js/paises.json');
+        response = await fetch('https://raw.githubusercontent.com/Devalyo/DIAPI/refs/heads/main/js/paises.json');
 
     }
     catch(e)
