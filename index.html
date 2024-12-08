@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de interação - API</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Consulta: Paises e DDD</h1>
+
+        <section class="mt-5">
+            <h2>1. Selecione um País</h2>
+            <p>Escolha um país para ver suas informações.</p>
+            <select id="countrySelect" class="form-control">
+                <option value="">Selecione um país</option>
+            </select>
+
+            <div id="countryInfo" class="mt-4">
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>2. Consulta a API BrasilAPI</h2>
+            <p>Digite um DDD para obter o estado e cidades correspondentes.</p>
+            <form id="dddForm">
+                <div class="form-group">
+                    <label for="ddd">DDD</label>
+                    <input type="text" id="ddd" class="form-control" placeholder="Digite o DDD">
+                </div>
+                <button type="submit" class="btn btn-primary">Consultar</button>
+            </form>
+
+            <div id="dddInfo" class="mt-4">
+            </div>
+        </section>
+
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
